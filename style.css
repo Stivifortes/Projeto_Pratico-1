@@ -1,0 +1,598 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+ 
+/*--Top Menu-Story One--*/
+.menu {
+	background-color: #333434;
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	top:0;
+	margin: 0;
+	z-index: 2;
+}
+
+/* Styling the whole Menu*/
+.menuint {
+	height: 80px;
+	width: 100%;
+	max-width: 850px;
+	margin: auto;
+}
+
+.menuint ul {
+	list-style: none;
+	padding: 0;
+	margin: auto;
+	height: 80px;
+}
+
+.menuint li {
+	float: left;
+	margin-left: 8px;
+	margin-right: 8px;
+	height: 80px;
+	line-height: 80px;
+}
+
+.menuint li a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 20px;
+	border: 1px solid rgb(255, 255, 255);
+	margin-left: 16px;
+	padding: 12px 30px;
+	
+}
+
+.menuint li a:active {
+	background-color: grey;
+}
+
+.menuint li a:hover {
+	background-color: grey;
+}
+
+
+/*Menu For Small Devices*/
+.menu-bar {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+/*From 900px The Menu Layout Changes to an menu-bar icon*/
+@media (max-width: 900px){
+    .menu-bar {
+        display:block;
+        position: fixed;
+        top: 10px;
+        z-index: 2;
+        left: 85%;
+    }
+    .menu {
+        display: none;
+    }
+    .menuint {
+        display: none;
+    }
+}
+
+
+
+/*--Hero Image-Story Two--*/
+.container1{
+    height:98%;
+    width: 100%;
+    background-image:url("images/bg-1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: 1px;
+}
+  
+.hero-text{
+  top: 45%; left: 50%; transform: translate(-50%, -50%); color: white; position: relative; text-align: center;
+}
+
+.hero-text h1 {font-size: 8vw; text-shadow: 2px 2px black;}
+.hero-text h3 {font-size: 4vw;}
+
+
+/*--Third Story- 3 Boxes --*/
+
+.container2{
+    width: 100%; height: 500px;  position: relative; max-width: 1500px; margin: auto;  margin-top: 70px;
+}
+
+ .Bootstrap{
+
+    width: 26.5%; height:430px; background-color: hsla(0, 19%, 89%, 0.5);  background-image:url("images/1-1.jpg");  background-repeat: no-repeat;  float: left;
+    margin-left:8%;background-size: 100%;
+    
+    
+    
+}
+
+.Bootstrap h1{
+    color: green; margin-top: 55%; margin-left: 15px; font-size: 25px;
+}
+
+.Bootstrap p{
+    margin-left: 5%;
+
+}
+.Bootstrap button{
+    width: 50%;	height: 50px; border: none; margin-left: 25%; margin-top: 3.5%; background-color: green; border-radius: 5px; color: white; font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.Bootstrap button:hover{
+
+    background-color: green; opacity: 0.7;
+}
+.responsive{
+
+    width: 26.5%;
+    height:430px;
+    background-color: hsla(0, 19%, 89%, 0.5);
+    background-image:url("images/1-2.jpg");
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 2%;
+    background-size: 100%;
+    
+
+}
+.responsive h1{
+    color: blue; margin-top: 55%; margin-left: 15px;  font-size: 25px;
+}
+.responsive p{
+    margin-left: 15px;
+
+}
+.responsive button{
+    margin-bottom: 20px; width: 50%; height: 50px;  margin-left: 25%;  margin-top: 3.5%;  border: none;  background-color: blue; border-radius: 5px; color: white; 
+    font-size: 20px;
+
+}
+.responsive button:hover{
+
+    background-color: blue; opacity: 0.6;
+}
+
+
+.paralax{
+
+    width: 26.5%; height:430px; background-color: hsla(0, 19%, 89%, 0.5); background-image:url("images/1-2.jpg"); background-repeat: no-repeat; float: left;
+    margin-left: 2%; position: relative; background-size: 100%;
+}
+
+.paralax h1{
+    color: red; margin-top: 55%; margin-left: 15px; font-size: 25px;
+}
+.paralax p{
+    margin-left: 15px;
+
+}
+.paralax button{
+
+    margin-bottom: 20px; width: 50%; height: 50px; margin-left: 25%; margin-top: 3.5%; border: none;  background-color: red; border-radius: 5px; color: white; 
+    font-size: 20px;
+    
+}
+
+.paralax button:hover{
+
+    background-color: red; opacity: 0.6;
+}
+
+/* Thre side column*/
+.container3{
+    width: 100%; max-width: 1500px; height: 600px; position: relative; margin:auto; margin-top: 50px;
+    
+}
+
+
+.leftside {
+    width: 40.6%;  height: auto; float: left; margin: auto; background-image: url("images/2-1.jpg"); background-repeat: no-repeat;
+     background-color: hsla(0, 19%, 89%, 0.5); margin-left: 8%; background-size: 100%;
+    
+    
+}
+.leftside h1{
+    color: brown; margin-top: 45%; margin-left: 15px; font-size: 25px; text-align: center;
+}
+.leftside p{
+    margin-left: 15px; margin-right: 10px; font-size: 18px;
+}
+ #fr{
+     margin-bottom: 115px;
+ }
+
+
+.rightside {
+    width: 40.6%; height:auto; float: left;  background-image: url("images/2-2.jpg"); margin: auto;  background-repeat: no-repeat;  margin-left:3% ;
+     background-color: hsla(0, 19%, 89%, 0.5); background-size: 100%;
+
+}
+.rightside h1{
+    color: brown; margin-top: 45%;  margin-left: 15px; font-size: 25px; text-align: center;
+}
+.rightside p{
+    margin-left: 15px; margin-right: 10px; font-size: 18px;
+}
+.rightside button{
+
+    width: 30%;  height: 40px;  margin-left: 53%;  border: none;  background-color:white;  border-radius: 10px;  color: black; font-size: 18px; margin-bottom: 60px;
+    
+}
+.rightside button:hover{
+    background-color: hsla(0, 19%, 89%, 0.5);
+}
+
+
+
+/*ADD RESPONSIVE MEDIA*/
+@media screen and (max-width:850px){
+   .menu{
+    visibility: hidden;
+   }
+   .container2{
+       max-width: 360px;height: 1400px; width: 70%;
+   }
+   .container3{
+       height: 1200px; max-width: 550px;
+   }
+
+   .Bootstrap{
+    display: block; width: 360px; margin: auto;
+   }
+
+   .responsive{
+    display: block; width: 360px; margin: auto; margin-top: 35px;
+   }
+   
+   .paralax{
+    display: block; width: 360px;margin: auto; margin-top: 35px;
+    }
+
+    .leftside{
+        display: block; width: 100%; margin: auto;
+    }
+    .rightside{
+    display: block; width: 100%; margin: auto; margin-top:35px;
+}
+
+   
+}
+
+
+/*-Big Devices--*/
+.container4{
+    height:320px; width: 100%; margin-top: 40px; background-image: url("images/bg-2.jpg"); background-size: cover; background-attachment: fixed;
+}
+
+.text{
+     color: white; margin-top: 50px; max-width:570px; margin: auto;
+}
+
+.container4 h1 {
+    
+    color: white; font-size: 50px; text-shadow: 2px 2px black; text-align: center; padding-top: 40px;
+    
+
+}
+.container4 p {
+    
+    font-size: 20px; text-align: center;
+
+}
+
+
+/******************************************************************************Conteiner 5****************************************************************************/
+
+.container5{
+width: 100%;  height: 550px; max-width: 1500px;margin: auto; position: relative;margin-top: 50px;
+}
+
+.filho {
+    width: 19.2%;
+    height: auto;
+    background-color: hsla(0, 19%, 89%, 0.5);
+    float: left;
+
+}
+.filho h2{
+    margin-top: 110%; text-align: center;
+}
+
+.filho p{
+    margin-left: 20px; font-size: 15px;
+}
+
+.filho button{
+    border: none; width: 35%; height: 40px; border-radius: 10px;  margin-top: 5%; margin-left: 30%; margin-bottom:47px ;position: relative;
+   
+    
+}
+
+.filho button:hover{
+    background-color: hsla(0, 19%, 89%, 0.5);
+}
+
+
+#fum{
+    background-image: url("images/4-1.jpg"); background-repeat: no-repeat;  background-size: 100%; margin-left: 8%;
+}
+#fum p{
+    margin-bottom: 100px;
+}
+#fdois{
+    background-image: url("images/4-2.jpg");  background-repeat: no-repeat;  background-size: 100%; margin-left: 35px;
+    }
+
+#ftres{  
+    background-image: url("images/4-3.jpg");  background-repeat: no-repeat;  background-size: 100%; margin-left: 35px;
+    }
+#ftres p{
+        margin-bottom: 100px;
+    }
+#fquatro{
+    background-image: url("images/4-4.jpg");  background-repeat: no-repeat;  background-position: top; background-size: 100%; margin-left: 35px;
+}
+
+/**********************************ADD RESPONSIVE MEDIA*/
+
+
+@media screen and (max-width:1000px){
+   .container5{
+        height: 1200px; max-width: 800px;
+        
+    }
+    .filho button{
+        margin-top: auto; margin-bottom:10% ;
+    }
+   
+   #fum{
+    width:40%; height: 550px;
+        
+    }
+    #fdois{
+        width:40%; height: 550px;   
+    }
+
+    #ftres{  
+    width:40% ; height: 550px; margin-top: 20px;margin-left: 8%;
+      
+    }
+    #fquatro{
+    width:40%;  height: 550px; margin-top: 20px;
+        
+    }
+}
+
+/*ADD RESPONSIVE MEDIA*/
+@media screen and (max-width:796px){
+    .container5{
+        height: 2300px; max-width: 500px;
+        
+    }
+    .filho button{
+        margin-top: auto; margin-bottom:10% ;
+    }
+  
+   #fum{
+    width:60% ; height: 550px; margin-left: 100px;
+        
+    }
+    #fdois{
+        width:60% ; height: 550px; margin-left: 100px;  margin-top: 20px;
+        
+       
+    }
+    #ftres{
+      
+        width:60% ; height: 550px; margin-left: 100px;
+        
+        
+    }
+    #fquatro{
+        width:60%; height: 550px;  margin-left: 100px;
+        
+    }
+}
+/******************************************************************************Conteiner 6********************************************************/
+
+.container6{
+    width: 100%;  height: 800px;  margin:auto; max-width: 1500px;
+    }
+
+    
+
+.bigc{
+    width: 84.6%;
+    height: auto;
+    margin: auto;
+    background-image:url("images/4-5.jpg");
+    background-size: 100%;
+    background-color: hsla(0, 19%, 89%, 0.5);
+    background-repeat: no-repeat;
+    margin-left:8% ;
+    margin-right: 3%;
+    
+}
+.bigc h1{
+   padding-top: 40%;
+   padding-left: 40px;
+}
+.bigc p{
+   margin-left: 40px; 
+   margin-right: 10px;
+}
+.bigc button{
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 40px;
+    font-size: 16px;
+    background-color: white;
+    margin-bottom: 40px;
+    
+}
+.bigc button:hover{
+
+    background-color: hsla(0, 19%, 89%, 0.5);
+}
+
+   
+    /*ADD RESPONSIVE MEDIA*/
+@media screen and (max-width:1100px){
+
+    .bigc{
+        width: 87%;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .bigc{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width:796px){
+    .bigc{
+        width: 100%;
+        margin: auto;
+       
+    }
+}
+
+
+/******************************************************************************Conteiner 7*******************************************************/
+.container7{
+        width: 100%;  height: 560px; background-image: url("images/bg-3.jpg"); background-size: cover; background-attachment: fixed;
+        position: relative; margin-top: 20px;
+        }
+       
+        .form{
+            width: 100%; max-width: 1000px; height: 500px; margin: auto; 
+            
+            }
+            .form h1{
+                color:white; text-align: center;  padding-top: 80px;
+            }
+            .fbox{
+                background-color: hsla(0, 19%, 89%, 0.5); width: 70%; height:auto; margin: auto; text-align: center;border-radius:6px;
+            }
+            .fbox p{
+                margin: 20px; padding-top: 20px; font-size: 18px; padding-bottom: 20px;
+
+            }
+            .textebox{
+                width: 70%;  margin: auto; height: auto;
+                
+            }
+            input[type="text"]{
+                display: block; height:30px; width:341px; border: none; outline:none; border-radius:6px; margin-top: 18px;
+                 background-color: hsla(0, 19%, 89%, 0.5);
+            }
+            .textebox button{
+                border: none;
+                padding: 11px 30px;
+                border-radius: 6px;
+                background-color: hsla(0, 1%, 27%, 1);
+                margin-top: 20px;
+                margin-left: 56%;
+                color: white;
+                font-size: 20px;
+                border: 2px solid white;
+                }
+                .form button:hover{
+                    background-color: rgb(255, 250, 250);
+                    color: black;
+                } 
+            
+#message{
+    display: inline; float:right; margin-top: -132px; width:300px; padding-bottom: 115px; border: none; background-color: hsla(0, 19%, 89%, 0.5);
+    border-radius:6px; outline:none;
+}
+
+
+/*ADD RESPONSIVE MEDIA*/
+@media screen and (max-width:1000px){
+    #message{
+        display:block;
+        float: left;
+        margin-top: 20px;
+        padding: 4%;
+        width: 91.5%;
+    }
+
+    input[type="text"]{
+        width: 99%;
+    }
+       
+       .textebox{
+           width: 70%;
+           margin: auto;
+       }
+       .textebox button{
+           margin-left:auto;
+       }
+    
+    .form{
+        height: 700px;
+    }
+    .conteiner8{
+        margin-top:40px
+    }
+}
+            @media screen and (max-width:796px){
+                .fbox{
+                    width:90% ;
+                }
+                .textebox{
+                    width: 90%;
+                    margin: auto;
+                }
+                .textebox button{
+                    padding: 9px 27px;
+                }
+            }
+
+/******************************************************************************Conteiner 8*******************************************************/       
+.container8{
+    width: 100%;  height: 270px;  margin: auto; position: relative; margin-top: 40px;
+    }
+
+        .use{
+            height:100px; width: 100%;  max-width: 400px; margin: auto; text-align: center; 
+           
+        }
+        .use h1{
+           
+            margin-top: 40px; opacity: 0.5; font-style: italic;
+        
+        }
+        
+        .use p{
+            font-size: 15.5px; opacity: 0.5;
+        }
+        
+        .copr{
+            width: 100%; height: 60px; border-top: 1px  solid grey; text-align: center;  margin-top:80px; opacity: 0.5;
+            
+        }
+        .copr p{
+            padding-top:20px ;
+        }
+        
